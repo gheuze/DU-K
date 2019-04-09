@@ -6,10 +6,34 @@
 \usepackage{geometry}
 
 \geometry{papersize={33.86cm, 19.05cm}}
-
+%\useoutertheme{shadow}
 \usenavigationsymbolstemplate{} % pour supprimer les outils de navigation
+\setbeamertemplate{itemize item}[circle]
+\definecolor{bleu}{RGB}{47, 85, 151}
+%\addtobeamertemplate{footline}{\hfill\insertframenumber/\inserttotalframenumber}
 
-\title{Généralisation du dépistage du cancer du col de l'utérus}
+\setbeamercolor{structure}{fg=bleu}
+ 
+\setbeamertemplate{footline}{
+\leavevmode%
+\hbox{\hspace*{-0.06cm}
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+	\usebeamerfont{author in head/foot}\insertshortauthor%~~(\insertshortinstitute)
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+	\usebeamerfont{section in head/foot}\insertshorttitle
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+	\usebeamerfont{section in head/foot}\insertshortdate{}\hspace*{2em}
+	\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+
+
+
+
+\title[dépistage du cancer du col de l'utérus]{\textbf{Généralisation du dépistage du cancer du col de l'utérus}}
 \subtitle{synthèse du cadre et recommandations}
 
 \author{Guillaume Heuzé}
@@ -20,36 +44,42 @@
 
 
 \begin{document}
-%	\frame{
-%		\titlepage
-%		}
-%
+\section{intro}
 	\frame{
-		\frametitle{Plan de la presentation}		
-essai
+		\titlepage
 		}
+
+	\frame{
+		\frametitle{Plan de la présentation}		
+		\tableofcontents
+		}
+\section{partie principale}
 	\frame{
 		\frametitle{Diapositive type}
+		\begin{itemize}
+			\item \textcolor{bleu}{essai}
+			\item essai
+
+		\end{itemize}
 
 		}
-%
-%
+
+
 	\frame{
 		\frametitle{Diapositive type}
-RVB 47-85-151
 		}
 
    
     
     	\frame{
-		\frametitle{}
-		\begin{center}
-			\Large{Conclusion globale}
-		\end{center}
+		\frametitle{Conclusion globale}
 	}
     
     
+\section{recommandations}    
     	\frame{
-		\textbf{Recommandations}
+		\begin{center}
+		\Large{\textbf{Recommandations}}
+		\end{center}
 		}
 \end{document}
